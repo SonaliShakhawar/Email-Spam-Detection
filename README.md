@@ -12,9 +12,13 @@ Tech Stack & Libraries Used
 -
 Python 
 Pandas (for data handling)
+--
 NumPy (for numerical operations)
+--
 Scikit-learn (for ML models & vectorization)
+--
 Jupyter Notebook(for development)
+--
 
 Dataset Description
 -
@@ -24,28 +28,28 @@ Category: Label ("spam" or "ham")
 
 Steps Followed in the Project
 -
-1️⃣ Data Preprocessing 🛠
+1️ Data Preprocessing
 --
 Read the dataset using pandas.read_csv().
 Replace missing values with empty strings.
 Convert labels ('spam' and 'ham') into numerical values (1 for spam, 0 for ham).
 
-2️⃣ Feature Extraction 🔍
+2️ Feature Extraction
 --
 Used TF-IDF Vectorization (TfidfVectorizer) to convert email text into numerical features.
 Removed stop words to focus on important terms.
 Transformed text data into a matrix for ML training.
 
-3️⃣ Splitting Data 📊
+3️ Splitting Data
 --
 Train-Test Split: 80% training, 20% testing using train_test_split().
 
-4️⃣ Model Training 🏋️
+4️ Model Training 
 --
 Applied Logistic Regression for classification.
 Fit the model using the training data.
 
-5️⃣ Model Evaluation 📈
+5️ Model Evaluation 
 --
 Predicted spam vs. ham on test data.
 Calculated accuracy score to measure performance.
